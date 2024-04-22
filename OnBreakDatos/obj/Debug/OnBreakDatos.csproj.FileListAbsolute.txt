@@ -1,0 +1,10 @@
+C:\Users\56952\Desktop\SolucionOnBreak\OnBreakDatos\bin\Debug\OnBreakDatos.dll.config
+C:\Users\56952\Desktop\SolucionOnBreak\OnBreakDatos\bin\Debug\OnBreakDatos.dll
+C:\Users\56952\Desktop\SolucionOnBreak\OnBreakDatos\bin\Debug\OnBreakDatos.pdb
+C:\Users\56952\Desktop\SolucionOnBreak\OnBreakDatos\bin\Debug\EntityFramework.dll
+C:\Users\56952\Desktop\SolucionOnBreak\OnBreakDatos\bin\Debug\EntityFramework.xml
+C:\Users\56952\Desktop\SolucionOnBreak\OnBreakDatos\obj\Debug\OnBreakDatos.csprojAssemblyReference.cache
+C:\Users\56952\Desktop\SolucionOnBreak\OnBreakDatos\obj\Debug\OnBreakDatos.csproj.CoreCompileInputs.cache
+C:\Users\56952\Desktop\SolucionOnBreak\OnBreakDatos\obj\Debug\OnBreakDatos.csproj.CopyComplete
+C:\Users\56952\Desktop\SolucionOnBreak\OnBreakDatos\obj\Debug\OnBreakDatos.dll
+C:\Users\56952\Desktop\SolucionOnBreak\OnBreakDatos\obj\Debug\OnBreakDatos.pdb

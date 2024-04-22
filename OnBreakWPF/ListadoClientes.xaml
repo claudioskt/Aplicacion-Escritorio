@@ -1,0 +1,53 @@
+﻿<Window x:Class="OnBreakWPF.ListadoClientes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OnBreakWPF"
+        mc:Ignorable="d"
+        Title="Listado Clientes" Height="467.6" Width="800" Background="White" Icon="Imagenes/Untitled-2.ico" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid  x:Name="gridBlack" Visibility="Hidden" Background="Black" HorizontalAlignment="Left" Height="420" VerticalAlignment="Top" Width="794" Margin="0,0,-0.4,0"/>
+        <DataGrid x:Name="dgListaClientes" HorizontalAlignment="Left" Margin="47,145,0,17.6" Width="701" BorderBrush="White" HeadersVisibility="Column" RowBackground="White" Background="White" VerticalContentAlignment="Stretch" HorizontalGridLinesBrush="#FF7D7D7D" GridLinesVisibility="None" MinColumnWidth="0" ClipToBounds="True" BorderThickness="0" SelectionChanged="DgListaClientes_SelectionChanged"/>
+        <ComboBox x:Name="cbxTipoE" HorizontalAlignment="Left" Margin="628,90,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="CbxTipoE_SelectionChanged" Background="White"/>
+        <TextBox x:Name="txtBuscarRut" HorizontalAlignment="Left" Height="23" Margin="89,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyUp="TxtBuscarRut_KeyUp" Background="White"/>
+        <Label Content="RUT :" HorizontalAlignment="Left" Margin="47,91,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="lb2" Content="RUT :" HorizontalAlignment="Left" Margin="47,91,0,0" VerticalAlignment="Top"/>
+        <Label Content="BUSCAR POR:" HorizontalAlignment="Left" Margin="47,60,0,0" VerticalAlignment="Top" Background="{x:Null}" FontStyle="Italic" FontWeight="Thin" Foreground="White"/>
+        <Label x:Name="lb1" Content="BUSCAR POR:" HorizontalAlignment="Left" Margin="47,60,0,0" VerticalAlignment="Top" Background="White" FontStyle="Italic" FontWeight="Thin"/>
+        <Label Content="FILTRAR POR:" HorizontalAlignment="Left" Margin="272,60,0,0" VerticalAlignment="Top" Background="{x:Null}" FontStyle="Italic" FontWeight="Thin" Width="81" Foreground="White"/>
+        <Label x:Name="lb3" Content="FILTRAR POR:" HorizontalAlignment="Left" Margin="272,60,0,0" VerticalAlignment="Top" Background="White" FontStyle="Italic" FontWeight="Thin" Width="81"/>
+        <Label Content="ACTIVIDAD :" HorizontalAlignment="Left" Margin="272,91,0,0" VerticalAlignment="Top" Width="85" Height="25" Foreground="White"/>
+        <Label x:Name="lb4" Content="ACTIVIDAD :" HorizontalAlignment="Left" Margin="272,91,0,0" VerticalAlignment="Top" Width="85" Height="25"/>
+        <Label Content="TIPO :" HorizontalAlignment="Left" Margin="579,91,0,0" VerticalAlignment="Top" Width="44" Height="25" Foreground="White"/>
+        <Label x:Name="lb5" Content="TIPO :" HorizontalAlignment="Left" Margin="579,91,0,0" VerticalAlignment="Top" Width="44" Height="25"/>
+        <ComboBox x:Name="cbxActividadE" HorizontalAlignment="Left" Margin="381,94,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="CbxActividadE_SelectionChanged" BorderBrush="#89000000" Background="White"/>
+        <Button x:Name="btnBack" Visibility="Visible" Margin="2,6,675.6,376" Background="{x:Null}" OpacityMask="Black" Click="BtnBack_Click" BorderBrush="{x:Null}" BorderThickness="0" Padding="-8,1,1,1"  Height="Auto">
+            <StackPanel Orientation="Horizontal" Width="90" Height="38">
+                <Image Source="Imagenes/icoback.ico" Height="25" Width="30" RenderTransformOrigin="0.59,0.503" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                <TextBlock Text="VOLVER" Width="55" VerticalAlignment="Center" HorizontalAlignment="Center" Height="25" Foreground="#DDFFFFFF"  Margin="0,0,0,7"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="btnBack1" Margin="2,6,675.6,376" Background="{x:Null}" OpacityMask="Black" Click="BtnBack_Click" BorderBrush="{x:Null}" BorderThickness="0" Padding="-8,1,1,1" Height="Auto">
+            <StackPanel Orientation="Horizontal" Width="90" Height="38">
+                <Image Source="Imagenes/icoback.ico" Height="25" Width="30" RenderTransformOrigin="0.59,0.503" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                <TextBlock Text="VOLVER" Width="55" VerticalAlignment="Center" HorizontalAlignment="Center" Height="25" Foreground="#DD000000" Margin="0,0,0,7"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="btnContraste1" Visibility="Visible" Margin="676,0,9.6,368.6" Click="BtnContraste_Click1" Background="{x:Null}" BorderBrush="{x:Null}" Height="Auto" >
+            <StackPanel Orientation="Vertical" Height="59" Width="75">
+                <Image Source="Imagenes/icoBrillo.ico" Height="36" Width="37" RenderTransformOrigin="0.497,-0.767"/>
+                <TextBlock Text="CONTRASTE" FontSize="9" Foreground="White"  Margin="10,0,10.2,0" Height="13"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="btnContraste" Margin="676,0,9.6,368.6" Click="BtnContraste_Click" Background="{x:Null}" BorderBrush="{x:Null}" Height="Auto" >
+            <StackPanel Orientation="Vertical" Height="59" Width="75">
+                <Image Source="Imagenes/icoBrillo.ico" Height="36" RenderTransformOrigin="0.497,-0.767" Margin="10,0,10.2,0"/>
+                <TextBlock Text="CONTRASTE" FontSize="9" Foreground="Black" Margin="10,0,10.2,0" Height="13"/>
+            </StackPanel>
+        </Button>
+    </Grid>
+</Window>
